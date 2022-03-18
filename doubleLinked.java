@@ -76,19 +76,17 @@ public class doubleLinked {
             System.out.println("we cant do that");
         }
     }
-    public void checkFirstVal(){
+    public String checkFirstVal() {
         Node thisCurrentVal = head;
 
-        if (head == null)
-        {
-            System.out.println("There Is no First Value.");
-        }
-        else
-        {
-            System.out.println(thisCurrentVal.data);
+        if (head == null) {
+            return "There Is no First Value.";
+        } else {
+            return thisCurrentVal.data + "";
 
         }
     }
+
 
     public String printList() {
         Node currentVal = head;
@@ -96,6 +94,7 @@ public class doubleLinked {
         String list = "";
         if (head == null) {
             System.out.println("There are no Values in this List to Print.");
+            return "There are no Values in this List to Print.";
         } else {
             System.out.println("This list contains");
             while (currentVal != null) {
@@ -108,6 +107,7 @@ public class doubleLinked {
             System.out.println(list);
 
         }
+        System.out.println(list);
         return list;
 
     }
