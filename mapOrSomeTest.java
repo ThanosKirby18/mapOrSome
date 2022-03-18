@@ -53,4 +53,69 @@ class mapOrSomeTest {
 
 
     }
-}
+    @Test
+    void simpleDoubleLinkedV4(){ // commit
+//comment
+        doubleLinked tester1 = new doubleLinked();
+        tester1.addNodeBack(13);
+        tester1.addNodeFront(20);
+
+        assertTrue(tester1.printList().equals("20 13 "));
+
+
+    }
+    @Test
+    void simpleDoubleLinkedV5(){ // commit
+//comment
+        doubleLinked tester1 = new doubleLinked();
+        tester1.addNodeBack(13);
+        tester1.addNodeFront(20);
+        tester1.removeFromHead();
+
+        assertTrue(tester1.printList().equals("13 "));
+
+
+    }
+    @Test
+    void simpleDoubleLinkedV6(){ // commit
+//comment
+        doubleLinked tester1 = new doubleLinked();
+
+        tester1.checkFirstVal();
+
+        assertTrue(tester1.checkFirstVal().equals("There Is no First Value."));
+
+
+    }
+    @Test
+    void simpleDoubleLinkedV7(){ // commit
+//comment
+        doubleLinked tester1 = new doubleLinked();
+
+        tester1.checkFirstVal();
+
+        assertTrue(tester1.checkFirstVal().equals("There Is no First Value."));
+
+
+    }
+    @Test
+    void simpleDoubleLinkedV8(){ // commit
+//comment
+        doubleLinked tester1 = new doubleLinked();
+
+        assertTrue(tester1.printList().equals("There are no Values in this List to Print."));
+
+
+    }
+    @Test
+    void simpleDoubleLinkedV9(){ // commit
+//comment
+        doubleLinked tester1 = new doubleLinked();
+
+        assertTrue(tester1.printList().equals("There are no Values in this List to Print."));
+
+
+    }
+
+    }
+
